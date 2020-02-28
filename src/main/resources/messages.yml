@@ -1,0 +1,31 @@
+plugin:
+  version: ${project.version}
+  prefix: "&8[&6CSS&8]&r"
+
+command:
+  general:
+    info:
+      usage: "&7使用法: &b%usage%"
+    error:
+      invalid-argument: "&c%argument% という引数は存在しません。"
+      no-permission: "&c%permission% の権限がありません。"
+      cannot-use-from-console: "&cこのコマンドはコンソールからは使えません。"
+      player-cannot-use: "&cこのコマンドはプレイヤーには使えません。"
+      not-enough-arguments: "&c引数が足りません。"
+      invalid-number: "&c%number% は不正な数字です。"
+      no-player-found: "&c%player% というプレイヤーが見つかりませんでした。"
+      no-point-name-found: "&c%point-name% というポイントは登録されていません。"
+  reload:
+    description: "言語ファイルをリロードします。データベース設定は再起動しないとリロードできません。"
+  help:
+    description: "このヘルプを表示します"
+    header: "&7------- &6ChestShopSearcher ヘルプ &7-------"
+    format: "&b%usage% &7- &a%description%"
+  search:
+    description: "チェストショップを様々な条件で検索します。"
+    no-world: "&c指定されたワールドは存在しません。"
+    header: "&7=----- &6chestshops &7-----="
+    specify-page-to-see-more: "&7他のページを表示するには: /css search <page>"
+    line-buy-and-sell: "&7品物: &r%item%&r&7, &7出品者: &b%player-name%&r, &7場所: &b%location%&r, &7取引単位: &b%quantity%&r, &7販売価格: &b%buy-price%&r, &7買取価格: &b%sell-price%&r"
+    line-buy: "&7品物: &r%item%&r&7, &7出品者: &b%player-name%&r, &7場所: &b%location%&r, &7取引単位: &b%quantity%&r, &7販売価格: &b%buy-price%&r"
+    line-sell: "&7品物: &r%item%&r&7, &7出品者: &b%player-name%&r, &7場所: &b%location%&r, &7取引単位: &b%quantity%&r, &7買取価格: &b%sell-price%&r"

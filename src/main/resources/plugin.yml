@@ -1,0 +1,46 @@
+name: ${project.artifactId}
+version: ${project.version}
+main: ${project.groupId}.Main
+author: LazyGon
+depend: ["ChestShop"]
+commands:
+  chestshopsearcher:
+    description: Base Command of ChestShopSearcher plugin.
+    aliases: ["css"]
+
+permissions:
+# command permissions
+  chestshopsearcher.*:
+    description: Permission for all command
+    children:
+      chestshopsearcher.add: true
+      chestshopsearcher.remove: true
+      chestshopsearcher.increase: true
+      chestshopsearcher.decrease: true
+      chestshopsearcher.set: true
+      chestshopsearcher.reload: true
+    default: op
+  chestshopsearcher.add:
+    description: Permission for command /css add <point-name>
+    default: op
+  chestshopsearcher.remove:
+    description: Permission for command /css remove <point-name>
+    default: op
+  chestshopsearcher.increase:
+    description: Permission for command /css increase <point-name> <player> <amount>
+    default: op
+  chestshopsearcher.decrease:
+    description: Permission for command /css decrease <point-name> <player> <amount>
+    default: op
+  chestshopsearcher.set:
+    description: Permission for command /css set <point-name> <player> <amount>
+    default: op
+  chestshopsearcher.reload:
+    description: Permission for command /css reload
+    default: op
+  chestshopsearcher.get:
+    description: Permission for command /css get <point-name> <player>
+    default: op
+  chestshopsearcher.pointlist:
+    description: Permission for command /css pointlist
+    default: op

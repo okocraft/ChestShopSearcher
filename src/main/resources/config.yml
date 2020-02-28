@@ -1,0 +1,9 @@
+database:
+    use-mysql: false
+    mysql:
+        user: root
+        host: "localhost"
+        port: 3306
+        pass: "set_by_yourself"
+    db-name: chestshopsearcher
+    sql-logging: false
